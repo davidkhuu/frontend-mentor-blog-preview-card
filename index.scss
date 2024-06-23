@@ -94,6 +94,11 @@ body, html {
   }
 }
 
+.card .content .title:hover {
+  color: $color-yellow;
+  cursor: pointer;
+}
+
 .card .content .description {
   color: $color-grey;
 }

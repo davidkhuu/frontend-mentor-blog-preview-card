@@ -88,6 +88,11 @@ body, html {
     font-size: 20px;
   }
 }
+.card .content .title:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+
 .card .content .description {
   color: hsl(0, 0%, 50%);
 }
