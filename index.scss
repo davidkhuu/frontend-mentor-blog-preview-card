@@ -36,10 +36,20 @@ body, html {
   box-sizing: border-box;
   padding: 24px;
   border: thin solid $color-black;
-  filter: drop-shadow(8px 8px $color-black);
+  filter: drop-shadow(8px 8px #000);
+  overflow: hidden;
+}
+@media (max-width: 375px) {
+  .card {
+    width: 327px;
+    height: 501px;
+  }
 }
 
 .blog-image {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
   border-radius: 10px;
   margin-bottom: 18px;
 }
@@ -57,10 +67,20 @@ body, html {
   font-weight: 800;
   margin-bottom: 12px;
 }
+@media (max-width: 375px) {
+  .card .content .category {
+    font-size: 12px;
+  }
+}
 
 .card .content .date {
   margin-bottom: 12px;
   font-size: 14px;
+}
+@media (max-width: 375px) {
+  .card .content .date {
+    font-size: 12px;
+  }
 }
 
 .card .content .title {
@@ -68,9 +88,19 @@ body, html {
   font-size: 24px;
   font-weight: 800;
 }
+@media (max-width: 375px) {
+  .card .content .title {
+    font-size: 20px;
+  }
+}
 
 .card .content .description {
   color: $color-grey;
+}
+@media (max-width: 375px) {
+  .card .content .description {
+    font-size: 14px;
+  }
 }
 
 .author {
